@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="267986ad-d479-4d90-afd4-212e8dea98bf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT  * from obat1]]>
+	</queryString>
+	<field name="kode_obat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_obat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_obat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="86151a9a-34a0-488f-a5fb-f03a93c57731" x="216" y="0" width="120" height="38"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[Data Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="53293d17-8e97-4463-aa9f-c570a9e828f9" x="198" y="38" width="158" height="41"/>
+				<textElement>
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[PUSKESMAS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="95" splitType="Stretch">
+			<image>
+				<reportElement uuid="4dffe4a8-b422-464f-924f-be1c3ad6e917" x="104" y="0" width="94" height="95"/>
+				<imageExpression><![CDATA["C:\\Users\\MSI GAMING\\Pictures\\projek pbo\\imgbin-jakarta-puskesmas-logo-bekasi-hospital-kerja-bakti-B0vAzvvQ0iiY9VSjVg22775SU.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="0369ad26-7c24-417f-8f4e-137c49c0318e" x="356" y="0" width="105" height="95"/>
+				<imageExpression><![CDATA["C:\\Users\\MSI GAMING\\Pictures\\projek pbo\\download-logo-puskesmas-vektor-cdr-corel-5.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="b486b70d-af76-4b7d-8863-1039f6420a74" x="10" y="21" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Kode Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5e00e29b-152f-4302-a02d-a84970525164" x="149" y="21" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nama Obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9d38af79-9677-4707-b5b6-2122985bec7b" x="308" y="21" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9b015b01-0ec5-462f-8417-218b76ca12c1" x="441" y="21" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Jenis Obat]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="1ef66500-542c-42eb-837d-f36b18d99f0f" x="10" y="41" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{kode_obat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2f954216-2683-453f-8aa0-d95574e1f646" x="149" y="41" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{nama_obat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cf158f87-5d20-402a-b6e9-9a18a23d615f" x="308" y="41" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5510a550-476c-4176-aad2-aef763e09fea" x="441" y="41" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{jenis_obat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
